@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+.opacity{
+    z-index: -1;
+    transition: all 0.3s ease;
+    &::after{
+        content: '';
+        transition: all 0.3s ease;
+        position: absolute;
+        display: flex;
+        background-color: black;
+        opacity: 0.6;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+}

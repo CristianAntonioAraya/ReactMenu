@@ -1,0 +1,76 @@
+.menu__container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: $Dark_Color;
+    transition: all 1s ease;
+    width: 5rem;
+    padding: 3rem 0;
+}
+.menu__container-toggle{
+    width: 25rem;
+}
+.menu__content{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    width: 100%;
+}
+.menu__icons{
+    color: $Primary_Color;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    padding: 1rem 1.5rem;
+    top: 0;
+    right: 0;
+    transition: opacity 0.3s ease;
+    display: block;
+}
+.menu__icons-toggle{
+    display: none;
+    opacity: 0;
+}
+.menu__items{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5rem;
+    transition: all 0.3s ease;
+}
+.menu__item-icon{
+    display: block;
+    cursor: pointer;
+    font-size: 30px;
+    transition: all 0.3s ease;
+    padding-left: 1rem;
+    padding-top: 5rem;
+   
+}
+.menu__item-icon-toggle{
+    opacity: 0;
+    width: 100%;
+}
+.menu__item-title{
+    position: absolute;
+    color: $Primary_Color;
+    height: 3rem;
+    display: none;
+    font-size: 30px;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    padding: 3rem 0 5rem 0;
+    z-index: 3;
+    &:hover{
+        background-color: lighten($color: $Dark_Color, $amount: 10);
+    }
+}
+.menu__item-title-toggle{
+    display: flex;
+    opacity: 1;
+}
